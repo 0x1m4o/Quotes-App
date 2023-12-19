@@ -39,6 +39,21 @@ dependencies:
   hive_flutter: ^1.1.0
   # https://pub.dev/packages/shimmer_animation/versions
   shimmer_animation: ^2.1.0+1
+  # https://pub.dev/packages/intl/versions
+  intl: ^0.18.1
+  # https://pub.dev/packages/flutter_svg/versions
+  flutter_svg: ^1.1.6
+  # https://pub.dev/packages/infinite_carousel/versions
+  infinite_carousel: ^1.0.2
+  # https://pub.dev/packages/auto_size_text/versions
+  auto_size_text: ^3.0.0
+  # https://pub.dev/packages/home_widget/versions
+  home_widget: ^0.4.1
+  # https://pub.dev/packages/path_provider/versions
+  path_provider: ^2.0.15
+  # https://pub.dev/packages/workmanager/versions 
+  workmanager: ^0.5.2
+
 
 dev_dependencies:
   flutter_test:
@@ -55,11 +70,20 @@ dev_dependencies:
   # https://pub.dev/packages/hive_generator/versions
   hive_generator: ^2.0.1
 
-
-
 flutter:
   uses-material-design: true
   assets:
     - .env
     - assets/
     - assets/images/
+    - assets/svg/
+  fonts:
+    - family: Nunito
+      fonts:
+        - asset: assets/fonts/Nunito_Sans/static/NunitoSans_10pt-Bold.ttf 
+    - family: JakartaSans
+      fonts:
+        - asset: assets/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Bold.ttf 
+    - family: NotoSerif
+      fonts:
+        - asset: assets/fonts/Noto_Serif/static/NotoSerif-SemiBold.ttf 

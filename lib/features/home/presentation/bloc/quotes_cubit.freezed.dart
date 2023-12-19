@@ -21,6 +21,7 @@ mixin _$QuotesState {
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function(QuotesEntity quotes) success,
+    required TResult Function(List<QuotesEntity> quotes) getAllQuotesSuccess,
     required TResult Function(ErrorObject failure) failure,
   }) =>
       throw _privateConstructorUsedError;
@@ -29,6 +30,7 @@ mixin _$QuotesState {
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function(QuotesEntity quotes)? success,
+    TResult? Function(List<QuotesEntity> quotes)? getAllQuotesSuccess,
     TResult? Function(ErrorObject failure)? failure,
   }) =>
       throw _privateConstructorUsedError;
@@ -37,6 +39,7 @@ mixin _$QuotesState {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(QuotesEntity quotes)? success,
+    TResult Function(List<QuotesEntity> quotes)? getAllQuotesSuccess,
     TResult Function(ErrorObject failure)? failure,
     required TResult orElse(),
   }) =>
@@ -46,6 +49,7 @@ mixin _$QuotesState {
     required TResult Function(_Initial value) initial,
     required TResult Function(_Loading value) loading,
     required TResult Function(_Success value) success,
+    required TResult Function(_GetAllSuccess value) getAllQuotesSuccess,
     required TResult Function(_Failure value) failure,
   }) =>
       throw _privateConstructorUsedError;
@@ -54,6 +58,7 @@ mixin _$QuotesState {
     TResult? Function(_Initial value)? initial,
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Success value)? success,
+    TResult? Function(_GetAllSuccess value)? getAllQuotesSuccess,
     TResult? Function(_Failure value)? failure,
   }) =>
       throw _privateConstructorUsedError;
@@ -62,6 +67,7 @@ mixin _$QuotesState {
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
     TResult Function(_Success value)? success,
+    TResult Function(_GetAllSuccess value)? getAllQuotesSuccess,
     TResult Function(_Failure value)? failure,
     required TResult orElse(),
   }) =>
@@ -103,12 +109,18 @@ class __$$_InitialCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Initial extends _Initial {
+class _$_Initial extends _Initial with DiagnosticableTreeMixin {
   const _$_Initial() : super._();
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'QuotesState.initial()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties.add(DiagnosticsProperty('type', 'QuotesState.initial'));
   }
 
   @override
@@ -126,6 +138,7 @@ class _$_Initial extends _Initial {
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function(QuotesEntity quotes) success,
+    required TResult Function(List<QuotesEntity> quotes) getAllQuotesSuccess,
     required TResult Function(ErrorObject failure) failure,
   }) {
     return initial();
@@ -137,6 +150,7 @@ class _$_Initial extends _Initial {
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function(QuotesEntity quotes)? success,
+    TResult? Function(List<QuotesEntity> quotes)? getAllQuotesSuccess,
     TResult? Function(ErrorObject failure)? failure,
   }) {
     return initial?.call();
@@ -148,6 +162,7 @@ class _$_Initial extends _Initial {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(QuotesEntity quotes)? success,
+    TResult Function(List<QuotesEntity> quotes)? getAllQuotesSuccess,
     TResult Function(ErrorObject failure)? failure,
     required TResult orElse(),
   }) {
@@ -163,6 +178,7 @@ class _$_Initial extends _Initial {
     required TResult Function(_Initial value) initial,
     required TResult Function(_Loading value) loading,
     required TResult Function(_Success value) success,
+    required TResult Function(_GetAllSuccess value) getAllQuotesSuccess,
     required TResult Function(_Failure value) failure,
   }) {
     return initial(this);
@@ -174,6 +190,7 @@ class _$_Initial extends _Initial {
     TResult? Function(_Initial value)? initial,
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Success value)? success,
+    TResult? Function(_GetAllSuccess value)? getAllQuotesSuccess,
     TResult? Function(_Failure value)? failure,
   }) {
     return initial?.call(this);
@@ -185,6 +202,7 @@ class _$_Initial extends _Initial {
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
     TResult Function(_Success value)? success,
+    TResult Function(_GetAllSuccess value)? getAllQuotesSuccess,
     TResult Function(_Failure value)? failure,
     required TResult orElse(),
   }) {
@@ -217,12 +235,18 @@ class __$$_LoadingCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Loading extends _Loading {
+class _$_Loading extends _Loading with DiagnosticableTreeMixin {
   const _$_Loading() : super._();
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'QuotesState.loading()';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties.add(DiagnosticsProperty('type', 'QuotesState.loading'));
   }
 
   @override
@@ -240,6 +264,7 @@ class _$_Loading extends _Loading {
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function(QuotesEntity quotes) success,
+    required TResult Function(List<QuotesEntity> quotes) getAllQuotesSuccess,
     required TResult Function(ErrorObject failure) failure,
   }) {
     return loading();
@@ -251,6 +276,7 @@ class _$_Loading extends _Loading {
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function(QuotesEntity quotes)? success,
+    TResult? Function(List<QuotesEntity> quotes)? getAllQuotesSuccess,
     TResult? Function(ErrorObject failure)? failure,
   }) {
     return loading?.call();
@@ -262,6 +288,7 @@ class _$_Loading extends _Loading {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(QuotesEntity quotes)? success,
+    TResult Function(List<QuotesEntity> quotes)? getAllQuotesSuccess,
     TResult Function(ErrorObject failure)? failure,
     required TResult orElse(),
   }) {
@@ -277,6 +304,7 @@ class _$_Loading extends _Loading {
     required TResult Function(_Initial value) initial,
     required TResult Function(_Loading value) loading,
     required TResult Function(_Success value) success,
+    required TResult Function(_GetAllSuccess value) getAllQuotesSuccess,
     required TResult Function(_Failure value) failure,
   }) {
     return loading(this);
@@ -288,6 +316,7 @@ class _$_Loading extends _Loading {
     TResult? Function(_Initial value)? initial,
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Success value)? success,
+    TResult? Function(_GetAllSuccess value)? getAllQuotesSuccess,
     TResult? Function(_Failure value)? failure,
   }) {
     return loading?.call(this);
@@ -299,6 +328,7 @@ class _$_Loading extends _Loading {
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
     TResult Function(_Success value)? success,
+    TResult Function(_GetAllSuccess value)? getAllQuotesSuccess,
     TResult Function(_Failure value)? failure,
     required TResult orElse(),
   }) {
@@ -356,15 +386,23 @@ class __$$_SuccessCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Success extends _Success {
+class _$_Success extends _Success with DiagnosticableTreeMixin {
   const _$_Success(this.quotes) : super._();
 
   @override
   final QuotesEntity quotes;
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'QuotesState.success(quotes: $quotes)';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+      ..add(DiagnosticsProperty('type', 'QuotesState.success'))
+      ..add(DiagnosticsProperty('quotes', quotes));
   }
 
   @override
@@ -390,6 +428,7 @@ class _$_Success extends _Success {
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function(QuotesEntity quotes) success,
+    required TResult Function(List<QuotesEntity> quotes) getAllQuotesSuccess,
     required TResult Function(ErrorObject failure) failure,
   }) {
     return success(quotes);
@@ -401,6 +440,7 @@ class _$_Success extends _Success {
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function(QuotesEntity quotes)? success,
+    TResult? Function(List<QuotesEntity> quotes)? getAllQuotesSuccess,
     TResult? Function(ErrorObject failure)? failure,
   }) {
     return success?.call(quotes);
@@ -412,6 +452,7 @@ class _$_Success extends _Success {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(QuotesEntity quotes)? success,
+    TResult Function(List<QuotesEntity> quotes)? getAllQuotesSuccess,
     TResult Function(ErrorObject failure)? failure,
     required TResult orElse(),
   }) {
@@ -427,6 +468,7 @@ class _$_Success extends _Success {
     required TResult Function(_Initial value) initial,
     required TResult Function(_Loading value) loading,
     required TResult Function(_Success value) success,
+    required TResult Function(_GetAllSuccess value) getAllQuotesSuccess,
     required TResult Function(_Failure value) failure,
   }) {
     return success(this);
@@ -438,6 +480,7 @@ class _$_Success extends _Success {
     TResult? Function(_Initial value)? initial,
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Success value)? success,
+    TResult? Function(_GetAllSuccess value)? getAllQuotesSuccess,
     TResult? Function(_Failure value)? failure,
   }) {
     return success?.call(this);
@@ -449,6 +492,7 @@ class _$_Success extends _Success {
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
     TResult Function(_Success value)? success,
+    TResult Function(_GetAllSuccess value)? getAllQuotesSuccess,
     TResult Function(_Failure value)? failure,
     required TResult orElse(),
   }) {
@@ -466,6 +510,175 @@ abstract class _Success extends QuotesState {
   QuotesEntity get quotes;
   @JsonKey(ignore: true)
   _$$_SuccessCopyWith<_$_Success> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$_GetAllSuccessCopyWith<$Res> {
+  factory _$$_GetAllSuccessCopyWith(
+          _$_GetAllSuccess value, $Res Function(_$_GetAllSuccess) then) =
+      __$$_GetAllSuccessCopyWithImpl<$Res>;
+  @useResult
+  $Res call({List<QuotesEntity> quotes});
+}
+
+/// @nodoc
+class __$$_GetAllSuccessCopyWithImpl<$Res>
+    extends _$QuotesStateCopyWithImpl<$Res, _$_GetAllSuccess>
+    implements _$$_GetAllSuccessCopyWith<$Res> {
+  __$$_GetAllSuccessCopyWithImpl(
+      _$_GetAllSuccess _value, $Res Function(_$_GetAllSuccess) _then)
+      : super(_value, _then);
+
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? quotes = null,
+  }) {
+    return _then(_$_GetAllSuccess(
+      null == quotes
+          ? _value._quotes
+          : quotes // ignore: cast_nullable_to_non_nullable
+              as List<QuotesEntity>,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$_GetAllSuccess extends _GetAllSuccess with DiagnosticableTreeMixin {
+  const _$_GetAllSuccess(final List<QuotesEntity> quotes)
+      : _quotes = quotes,
+        super._();
+
+  final List<QuotesEntity> _quotes;
+  @override
+  List<QuotesEntity> get quotes {
+    if (_quotes is EqualUnmodifiableListView) return _quotes;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_quotes);
+  }
+
+  @override
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
+    return 'QuotesState.getAllQuotesSuccess(quotes: $quotes)';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+      ..add(DiagnosticsProperty('type', 'QuotesState.getAllQuotesSuccess'))
+      ..add(DiagnosticsProperty('quotes', quotes));
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$_GetAllSuccess &&
+            const DeepCollectionEquality().equals(other._quotes, _quotes));
+  }
+
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, const DeepCollectionEquality().hash(_quotes));
+
+  @JsonKey(ignore: true)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$_GetAllSuccessCopyWith<_$_GetAllSuccess> get copyWith =>
+      __$$_GetAllSuccessCopyWithImpl<_$_GetAllSuccess>(this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(QuotesEntity quotes) success,
+    required TResult Function(List<QuotesEntity> quotes) getAllQuotesSuccess,
+    required TResult Function(ErrorObject failure) failure,
+  }) {
+    return getAllQuotesSuccess(quotes);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(QuotesEntity quotes)? success,
+    TResult? Function(List<QuotesEntity> quotes)? getAllQuotesSuccess,
+    TResult? Function(ErrorObject failure)? failure,
+  }) {
+    return getAllQuotesSuccess?.call(quotes);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(QuotesEntity quotes)? success,
+    TResult Function(List<QuotesEntity> quotes)? getAllQuotesSuccess,
+    TResult Function(ErrorObject failure)? failure,
+    required TResult orElse(),
+  }) {
+    if (getAllQuotesSuccess != null) {
+      return getAllQuotesSuccess(quotes);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_Loading value) loading,
+    required TResult Function(_Success value) success,
+    required TResult Function(_GetAllSuccess value) getAllQuotesSuccess,
+    required TResult Function(_Failure value) failure,
+  }) {
+    return getAllQuotesSuccess(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_Loading value)? loading,
+    TResult? Function(_Success value)? success,
+    TResult? Function(_GetAllSuccess value)? getAllQuotesSuccess,
+    TResult? Function(_Failure value)? failure,
+  }) {
+    return getAllQuotesSuccess?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_Loading value)? loading,
+    TResult Function(_Success value)? success,
+    TResult Function(_GetAllSuccess value)? getAllQuotesSuccess,
+    TResult Function(_Failure value)? failure,
+    required TResult orElse(),
+  }) {
+    if (getAllQuotesSuccess != null) {
+      return getAllQuotesSuccess(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _GetAllSuccess extends QuotesState {
+  const factory _GetAllSuccess(final List<QuotesEntity> quotes) =
+      _$_GetAllSuccess;
+  const _GetAllSuccess._() : super._();
+
+  List<QuotesEntity> get quotes;
+  @JsonKey(ignore: true)
+  _$$_GetAllSuccessCopyWith<_$_GetAllSuccess> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
@@ -511,15 +724,23 @@ class __$$_FailureCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_Failure extends _Failure {
+class _$_Failure extends _Failure with DiagnosticableTreeMixin {
   const _$_Failure(this.failure) : super._();
 
   @override
   final ErrorObject failure;
 
   @override
-  String toString() {
+  String toString({DiagnosticLevel minLevel = DiagnosticLevel.info}) {
     return 'QuotesState.failure(failure: $failure)';
+  }
+
+  @override
+  void debugFillProperties(DiagnosticPropertiesBuilder properties) {
+    super.debugFillProperties(properties);
+    properties
+      ..add(DiagnosticsProperty('type', 'QuotesState.failure'))
+      ..add(DiagnosticsProperty('failure', failure));
   }
 
   @override
@@ -545,6 +766,7 @@ class _$_Failure extends _Failure {
     required TResult Function() initial,
     required TResult Function() loading,
     required TResult Function(QuotesEntity quotes) success,
+    required TResult Function(List<QuotesEntity> quotes) getAllQuotesSuccess,
     required TResult Function(ErrorObject failure) failure,
   }) {
     return failure(this.failure);
@@ -556,6 +778,7 @@ class _$_Failure extends _Failure {
     TResult? Function()? initial,
     TResult? Function()? loading,
     TResult? Function(QuotesEntity quotes)? success,
+    TResult? Function(List<QuotesEntity> quotes)? getAllQuotesSuccess,
     TResult? Function(ErrorObject failure)? failure,
   }) {
     return failure?.call(this.failure);
@@ -567,6 +790,7 @@ class _$_Failure extends _Failure {
     TResult Function()? initial,
     TResult Function()? loading,
     TResult Function(QuotesEntity quotes)? success,
+    TResult Function(List<QuotesEntity> quotes)? getAllQuotesSuccess,
     TResult Function(ErrorObject failure)? failure,
     required TResult orElse(),
   }) {
@@ -582,6 +806,7 @@ class _$_Failure extends _Failure {
     required TResult Function(_Initial value) initial,
     required TResult Function(_Loading value) loading,
     required TResult Function(_Success value) success,
+    required TResult Function(_GetAllSuccess value) getAllQuotesSuccess,
     required TResult Function(_Failure value) failure,
   }) {
     return failure(this);
@@ -593,6 +818,7 @@ class _$_Failure extends _Failure {
     TResult? Function(_Initial value)? initial,
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Success value)? success,
+    TResult? Function(_GetAllSuccess value)? getAllQuotesSuccess,
     TResult? Function(_Failure value)? failure,
   }) {
     return failure?.call(this);
@@ -604,6 +830,7 @@ class _$_Failure extends _Failure {
     TResult Function(_Initial value)? initial,
     TResult Function(_Loading value)? loading,
     TResult Function(_Success value)? success,
+    TResult Function(_GetAllSuccess value)? getAllQuotesSuccess,
     TResult Function(_Failure value)? failure,
     required TResult orElse(),
   }) {

@@ -9,12 +9,10 @@ class ApiUtil {
   static Dio get dio {
     final dio = Dio();
     String prettifyJson(String json) {
-      const JsonEncoder encoder =
-          JsonEncoder.withIndent('  '); // Use two spaces for indentation
+      const JsonEncoder encoder = JsonEncoder.withIndent('  ');
       return encoder.convert(jsonDecode(json));
     }
 
-    // Add interceptors
     dio.interceptors.add(InterceptorsWrapper(
       onRequest: (options, handler) async {
         String? token = GlobalData.instance.token; // Implement this method
@@ -45,7 +43,6 @@ class ApiUtil {
         return handler.next(response);
       },
       onError: (DioException err, handler) {
-        // Handle errors if needed
         final statusCode = err.response?.statusCode;
         final uri = err.requestOptions.path;
 
@@ -62,7 +59,6 @@ class ApiUtil {
         return handler.next(err);
       },
     ));
-
     return dio;
   }
 }

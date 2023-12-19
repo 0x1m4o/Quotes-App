@@ -4,7 +4,7 @@ class ColorPalette {
   static const Color white = Colors.white;
   static const Color black = Colors.black;
   static const Color darkText = Color(0xff4e4e4e);
-  static const Color bg = Color(0xFFF6F2F2);
+  static const Color bg = Color.fromARGB(255, 242, 240, 240);
   static const Color red = Color(0xFFFF4E56);
   static const Color iconColor = Color(0xFF4A5568);
   static const Color lightBlue = Color.fromARGB(255, 193, 219, 250);
